@@ -1,11 +1,17 @@
 <script lang="ts">
+  import Card from "./components/Card.svelte";
+  import MainFeed from "./components/MainFeed.svelte";
 </script>
 
-<main>
-<div class="text-blue-500">
-  Hello world!
-</div>
+<main class="custom ">
+  <MainFeed>
+  </MainFeed>
 </main>
 
 <style>
+  .custom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 </style>
