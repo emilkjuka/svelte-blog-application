@@ -1,17 +1,12 @@
 <script lang="ts">
-  import Card from "./components/Card.svelte";
-  import MainFeed from "./components/MainFeed.svelte";
-  import NewPost from "./components/NewPost.svelte";
+  import ContentWrapper from "./components/ContentWrapper.svelte";
+    import MainFeed from "./components/MainFeed.svelte";
 </script>
 
-<main class="custom">
-  <MainFeed />
+<main class="flex justify-center align-middle">
+  <ContentWrapper></ContentWrapper>
 </main>
 
 <style>
-  .custom {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+
 </style>

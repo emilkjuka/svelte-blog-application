@@ -1,10 +1,11 @@
 <script>
     import Card from "./Card.svelte";
+    import NewPost from "./NewPost.svelte";
 
     let contents = "this is the first container";
 </script>
 
-<div class="w-[60%] flex-row justify-center align-middle">
-    <Card contents = {contents}/>
-    <Card contents = {"this is a different post"}/>
+<div class=" flex-row w-full justify-center align-middle">
+    <Card></Card>
+    <Card></Card>
 </div>

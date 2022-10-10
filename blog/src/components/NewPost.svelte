@@ -2,4 +2,6 @@
     import Card from "./Card.svelte";
 </script>
 
-<Card contents=""></Card>
+<Card>
+    <p>New Post Placeholder</p>
+</Card>
