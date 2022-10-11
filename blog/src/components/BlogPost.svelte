@@ -1,10 +1,9 @@
 <script>
     import Card from "./Card.svelte";
-
     export let post;
 </script>
 
-<Card>
+<Card color={"bg-[#801A86]"}>
     <div class="flex  justify-between mb-4">
         <div class="text-white font-bold text-xl">{post.title}</div>
         <div class="text-white font-bold text-xl">{post.date}</div>
