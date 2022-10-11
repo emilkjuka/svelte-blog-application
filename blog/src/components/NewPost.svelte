@@ -15,6 +15,7 @@
         $postsData = [newPost, ...$postsData]
         console.log("submitted +" + newPost.author + newPost.date + newPost.content);
     }
+
 </script>
 
 <Card color={"bg-[#A4F9C8]"}>
@@ -23,7 +24,9 @@
             class="p-2 rounded-md"
             id="author"
             bind:value={author}
-        />
+            on:focus={() => author=="Author" ? author="" : author}
+            on:blur={() => author=="" ? author="Author" : author}
+            />
         <button
             class="bg-white text-gray-600 rounded-md w-24 hover:bg-[#801A86] hover:text-white"
             on:click={() => onSubmit()}>Submit</button
@@ -34,8 +37,9 @@
             class="rounded-md p-2"
             rows="4"
             cols="96"
-            placeholder={content}
             bind:value={content}
+            on:focus={() => content=="What are you going to post about today?" ? content="" : content}
+            on:blur={() => content=="" ? content="What are you going to post about today?" : content}
         />
     </div>
 </Card>
