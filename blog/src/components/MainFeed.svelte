@@ -1,10 +1,18 @@
-<script>
+<script lang="ts">
     import BlogPost from "./BlogPost.svelte";
-    import NewPost from "./NewPost.svelte";
+    import { postsData } from "../stores/blogStore";
+    
+    let tempData;
+    postsData.subscribe(data =>
+    {
+        tempData = data;
+        console.log(tempData)
+    });
 
-    let contents = "this is the first container";
 </script>
 
 <div class=" flex-row justify-center align-middle">
-<BlogPost></BlogPost>
+    {#each tempData as post}
+        <BlogPost post={post}></BlogPost>
+    {/each}
 </div>
