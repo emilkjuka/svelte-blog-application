@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.custom{
+    background-color: #DBCBD8;
+    color:#0A0908;
+    font-family: 'Montserrat', sans-serif;
+}
