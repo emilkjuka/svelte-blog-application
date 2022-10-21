@@ -1,4 +1,4 @@
-<script land="ts">
+<script lang="ts">
     import Card from "./Card.svelte";
     import { postsData } from "../stores/blogStore";
     import { blogPost } from "../classes";
